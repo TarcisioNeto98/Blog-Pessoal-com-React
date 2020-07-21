@@ -1,0 +1,23 @@
+@media screen and (max-width: 600px){
+  #botao{
+    width: 40px;
+    margin: 10px;
+  }
+
+  .menu{
+    width: auto;
+    height: auto;
+    border-bottom: 0.5px groove black;
+    border-radius: 5px;
+  }
+
+  .teste{
+    background-color: white;
+    width: 260px;
+    height: 380px;
+    opacity: 85%;
+    position: relative;
+    bottom: 50px;
+    border-radius: 1px;
+  }
+}
