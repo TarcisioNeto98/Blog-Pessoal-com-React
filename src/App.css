@@ -53,4 +53,9 @@
     padding-top: 5%;
   }
 
+  #espaco{
+    height: 10px;
+    background-color: rgb(28,28,28);
+  }
+
 }

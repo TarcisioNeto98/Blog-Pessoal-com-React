@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 //import menu from './img/menu.png';
 //import menu from './menu.png';
+import logo from './img/react.png'
 
 function Lista(props){
   return (
@@ -18,7 +19,7 @@ class ListaOpcoes extends React.Component{
     super(props);
   }
   render(){
-    return (this.props.clicado) ? <nav className="menu-lateral"><Lista /></nav> : null;
+    return (this.props.clicado) ? <nav className="menu-lateral"><Lista /><div id="espaco"></div></nav> : null;
   }
 }
 
@@ -57,7 +58,9 @@ class Menu extends React.Component{
   render(){
     return(
       <div>
-        <div className = {(!this.state.clicado) ? "menu sombra" : "menu2"}><BotaoMenu BotaoClicado = {this.clicarBotao}/></div>
+        <div className = {(!this.state.clicado) ? "menu sombra" : "menu2"}>
+          <BotaoMenu BotaoClicado = {this.clicarBotao}/>
+        </div>
         <ListaOpcoes clicado = {this.state.clicado}/>
       </div>
     );
