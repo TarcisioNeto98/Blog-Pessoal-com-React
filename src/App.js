@@ -7,7 +7,7 @@ import logo from './img/react.png'
 class Lista extends React.Component{
 
   constructor(props){
-    super(props);
+    super(props)
   }
 
   selecionarOpcao(valor){
