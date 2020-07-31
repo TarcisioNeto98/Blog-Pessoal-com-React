@@ -4,22 +4,36 @@ import './App.css';
 //import menu from './menu.png';
 import logo from './img/react.png'
 
-function Lista(props){
-  return (
-    <ul className = "">
-      <li id = "negacao">Categoria</li>
-      <li>Projetos</li>
-      <li>Sobre mim</li>
-    </ul>
-  );
+class Lista extends React.Component{
+
+  constructor(props){
+    super(props);
+  }
+
+  selecionarOpcao(valor){
+    this.props.clicarLista(valor);
+  }
+
+  render(){
+    return (
+      <ul className = "">
+        <li id = "home" onClick={ () => this.selecionarOpcao("home")}>Home</li>
+        <li id = "categoria" onClick={ () => this.selecionarOpcao("categoria")}>Categoria</li>
+        <li id = "Projetos" onClick={() => this.selecionarOpcao("projetos")}>Projetos</li>
+        <li id = "conversa" onClick={() => this.selecionarOpcao("conversa")}>Fale Comigo</li>
+        <li id = "sobre" onClick={() => this.selecionarOpcao("sobre")}>Sobre mim</li>
+      </ul>
+    );
+  }
 }
 
 class ListaOpcoes extends React.Component{
   constructor(props){
     super(props);
   }
+
   render(){
-    return (this.props.clicado) ? <nav className="menu-lateral"><Lista /><div id="espaco"></div></nav> : null;
+    return (this.props.clicado) ? <nav className="menu-lateral"><Lista clicarLista = {this.props.mudarDados}/><div id="espaco"></div></nav> : null;
   }
 }
 
@@ -61,7 +75,7 @@ class Menu extends React.Component{
         <div className = {(!this.state.clicado) ? "menu sombra" : "menu2"}>
           <BotaoMenu BotaoClicado = {this.clicarBotao}/>
         </div>
-        <ListaOpcoes clicado = {this.state.clicado}/>
+        <ListaOpcoes mudarDados = {this.props.mudar} clicado = {this.state.clicado}/>
       </div>
     );
   }
