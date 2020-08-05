@@ -1,6 +1,7 @@
 import React from 'react';
 import Menu from './App';
-import Formulario from "./Formulario"
+import Formulario from "./Formulario";
+import Sobre from "./Sobre";
 
 class Conteiner extends React.Component{
     constructor(props){
@@ -12,7 +13,8 @@ class Conteiner extends React.Component{
 
     selecionar(tipo){
         if(tipo === "conversa") return <Formulario />
-        return null;
+        else if(tipo === "sobre") return <Sobre />
+        else return null;
     }
 
     mudarCentro(valor){
