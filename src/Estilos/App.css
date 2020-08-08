@@ -1,5 +1,9 @@
 @media screen and (max-width: 600px){
 
+  #desaparecer{
+    display: none;
+  }
+
   .sombra{
     box-shadow: 0px 1px 10px;
     background-color: black;
