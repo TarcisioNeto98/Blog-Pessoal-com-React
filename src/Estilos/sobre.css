@@ -1,31 +1,34 @@
-#sobreMim{
-    width: 90%;
-    margin-left: 5%;
-    height: 180px;
-}
+@media screen and (max-width: 600px){
 
-h1{
-    text-align: left;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+    #sobreMim{
+        width: 90%;
+        margin-left: 5%;
+        height: 180px;
+    }
 
-h1, h2{
-    text-transform: uppercase;
-}
+    h1{
+        text-align: left;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 
-h2{
-    font-size: medium;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+    h1, h2{
+        text-transform: uppercase;
+    }
 
-.sobre div{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    h2{
+        font-size: medium;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .sobre div{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

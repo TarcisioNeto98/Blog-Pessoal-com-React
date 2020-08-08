@@ -1,18 +1,36 @@
-.rodape{
-    width: 100%;
-}
+@media screen and (max-width: 600px){
+    .rodape{
+        width: 86%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color:rgb(252, 253, 252);
+    }
 
-.facebook, .github, .instagram{
-    width: 19.3%;
-    display: inline-block;
-    margin-left: 6%;
-    margin-right: 6%;
-    padding: 1%;
-    margin-bottom: auto;
-    margin-top: auto;
-    box-shadow: 1px 1px 6px;
-}
+    .facebook, .github, .instagram{
+        width: 13.3%;
+        display: inline-block;
+        margin-right: 2%;
+        padding: 1%;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
 
-img{
-    width: 100%;
+    img{
+        width: 100%;
+    }
+
+    #telefone, #localizacao, #email{
+        width: 6%;
+    }
+
+    p{
+        margin-left: 3%;
+        font-size: 18px;
+    }
+
+    h4{
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 }
