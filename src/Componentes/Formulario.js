@@ -2,9 +2,6 @@ import React from 'react';
 import '../Estilos/formulario.css';
 
 class Formulario extends React.Component{
-    constructor(props){
-        super(props);
-    }
 
     render(){
         return (

@@ -5,10 +5,6 @@ import iconeInstagram from '../img/instagram-icone.png';
 import '../Estilos/rodape.css';
 
 class Rodape extends React.Component{
-    constructor(props){
-        super(props);
-    }
-
     render(){
         return(
             <div className="rodape">

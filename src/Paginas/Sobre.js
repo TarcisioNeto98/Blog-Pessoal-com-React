@@ -3,10 +3,7 @@ import sobreMim from '../img/sobreMim.jpg';
 import '../Estilos/sobre.css';
 
 class Sobre extends React.Component{
-    constructor(props){
-        super(props);
-    }
-
+    
     render(){
         return (
             <section className="sobre">
