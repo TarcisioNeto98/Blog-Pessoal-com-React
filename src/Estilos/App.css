@@ -22,6 +22,7 @@
     height: auto;
     margin-right: auto;
     margin-left: auto;
+    transition: height 20s;
   }
 
   .menu2{

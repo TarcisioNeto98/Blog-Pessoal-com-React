@@ -27,11 +27,11 @@ class Menu extends React.Component{
           </div>
           <nav className="menu-lateral" id = {(this.state.clicado) ? "desaparecer" : "aparecer"}>
             <ul className = "">
-              <li id = "home"><Link to="/">Home</Link></li>
+              <li id = "home"><Link style={{ textDecoration: 'none', color: 'white' }} to="/">Home</Link></li>
               <li id = "categoria">Categoria</li>
               <li id = "Projetos">Projetos</li>
-              <li id = "conversa"><Link to="Contato">Fale Comigo</Link></li>
-              <li id = "sobre"><Link to="Sobre">Sobre mim</Link></li>
+              <li id = "conversa"><Link style={{ textDecoration: 'none', color: 'white' }} to="/Contato">Fale Comigo</Link></li>
+              <li id = "sobre"><Link style={{ textDecoration: 'none', color: 'white' }} to="/Sobre">Sobre mim</Link></li>
             </ul>
             <div id="espaco"/>
           </nav>
