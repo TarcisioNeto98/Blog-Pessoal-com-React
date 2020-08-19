@@ -34,7 +34,8 @@ span{
 }
 
 @media screen and (max-width: 600px){
-  #desaparecer{
+  
+  #desaparecer, #invisivel{
     display: none;
   }
 

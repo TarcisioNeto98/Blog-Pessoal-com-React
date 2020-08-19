@@ -25,7 +25,7 @@ class Menu extends React.Component{
   render(){
     return(
       <BrowserRouter>
-        <div>
+        <div  id = {(this.props.esconder==='invisivel') ? 'invisivel' : ''}>
           <div className = {(!this.state.clicado) ? "menu sombra" : "menu2"}>
             <BotaoMenu BotaoClicado = {this.clicarBotao}/>
           </div>
