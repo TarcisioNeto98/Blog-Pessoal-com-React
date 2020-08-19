@@ -1,5 +1,39 @@
-@media screen and (max-width: 600px){
+span{
+  color:rgb(136, 138, 139);
+}
 
+@media (min-width: 992px){
+  
+  span:hover{
+    color: rgb(139, 138, 74);
+  }
+
+  ul, li{
+    display: inline-block;
+    color: rgb(136, 138, 139);
+    margin-left: 5%;
+  }
+
+  ul li:hover{
+    color: gold;
+  }
+
+  ul{
+    margin-left: 7%;
+    width: 50%;
+  }
+  
+  #botao{
+    display: none;
+  }
+
+  .menu-lateral{
+    background-color:black;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 600px){
   #desaparecer{
     display: none;
   }
@@ -62,5 +96,4 @@
     height: 10px;
     background-color: rgb(28,28,28);
   }
-
 }

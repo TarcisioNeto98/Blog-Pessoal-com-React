@@ -3,19 +3,23 @@ import '../Estilos/App.css';
 import Contato from '../Paginas/Contato';
 import Sobre from '../Paginas/Sobre';
 import BotaoMenu from '../Componentes/BotaoMenu';
-import {Route, BrowserRouter, Link, Switch} from 'react-router-dom';
+import {Route, BrowserRouter, Link, Switch, NavLink} from 'react-router-dom';
 //import menu from './img/menu.png';
 //import menu from './menu.png';
 
 class Menu extends React.Component{
   constructor(props){
     super(props);
-    this.state = {clicado: false};
+    this.state = {clicado: false, hover:{color:'rgb(136, 138, 139)', textDecoration: 'none'}};
     this.clicarBotao = this.clicarBotao.bind(this);
   }
 
   clicarBotao(clique){
     this.setState({clicado: clique});
+  }
+
+  tirarMouse(link){
+    this.setState({hover: {color:'rgb(136, 138, 139)', textDecoration: 'none'}});
   }
 
   render(){
@@ -27,11 +31,11 @@ class Menu extends React.Component{
           </div>
           <nav className="menu-lateral" id = {(this.state.clicado) ? "desaparecer" : "aparecer"}>
             <ul className = "">
-              <li id = "home"><Link style={{ textDecoration: 'none', color: 'white' }} to="/">Home</Link></li>
+              <li id = "home"><Link style={{textDecoration:'none'}} to="/"><span>Home</span></Link></li>
               <li id = "categoria">Categoria</li>
               <li id = "Projetos">Projetos</li>
-              <li id = "conversa"><Link style={{ textDecoration: 'none', color: 'white' }} to="/Contato">Fale Comigo</Link></li>
-              <li id = "sobre"><Link style={{ textDecoration: 'none', color: 'white' }} to="/Sobre">Sobre mim</Link></li>
+              <li id = "conversa"><Link style={{textDecoration:'none'}} to="/Contato"><span>Fale Comigo</span></Link></li>
+              <li id = "sobre"><Link style={{textDecoration:'none'}} to="/Sobre"><span>Sobre mim</span></Link></li>
             </ul>
             <div id="espaco"/>
           </nav>
