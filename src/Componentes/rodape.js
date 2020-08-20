@@ -8,7 +8,15 @@ import telefone from '../img/telefone.svg'
 import localizacao from '../img/gps-icone.svg'
 import email from '../img/email.svg';
 /*
-<div id = "redes">
+*/
+class Rodape extends React.Component{
+    render(){
+        return(
+            <div className="rodape">
+                <div id="sobreMim">
+                    <h1>Sobre Mim</h1>
+                    <span>Sou um jovem dedicado que sempre busca se superar.</span>
+                    <div id = "redes">
                         <div className="facebook">
                             <a href="https://www.google.com.br/"><img src={iconeFacebook} alt="Link de ligação com o Facebook."/></a>
                         </div>
@@ -19,21 +27,17 @@ import email from '../img/email.svg';
                             <img src={iconeGithub} alt="Link de ligação com o Github."/>
                         </div>
                     </div>
-*/
-class Rodape extends React.Component{
-    render(){
-        return(
-            <div className="rodape">
+                </div>
                 <div id="centro">
-                    <h3>Contatos</h3>
+                    <h1>Contatos</h1>
                     <img style={{display:'none'}} id="email" src={email} alt="Endereço de email"/>
-                    <p>E-mail: tarcisioneto1998@gmail.com</p><br/><br/>
-
-                    <img style={{display:'none'}} id="localizacao" src={localizacao} alt="Endereço"/>
-                    <p>Crateús - CE</p><br/><br/>
+                    <p>E-mail: <span>tarcisioneto1998@gmail.com</span></p><br/><br/>
 
                     <img style={{display:'none'}} id="telefone" src={telefone} alt="Icone de telefone de contato."/>
-                    <p>Fone: Telefone</p><br/><br/>
+                    <p>Fone: <span>Telefone</span></p><br/><br/>
+
+                    <img style={{display:'none'}} id="localizacao" src={localizacao} alt="Endereço"/>
+                    <p>Cidade: <span>Crateús - CE</span></p><br/><br/>
                 </div>
             </div>
         );

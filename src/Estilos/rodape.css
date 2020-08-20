@@ -1,16 +1,26 @@
 @media (min-width: 992px){
+    .rodape #sobreMim{
+        width: 40%;
+        margin-left: 12%;
+    }
+    .rodape span{
+        color: rgb(134, 131, 131);
+    }
     .rodape p{
         margin-right: 23px;
     }
 
     .rodape h3{
-        margin-top: 20px;
+        padding-top: 3%;
+        margin-top: 100px;
     }
 
     .rodape{
+        display: flex;
+        align-items: initial;
         background-color: rgb(36, 34, 34);
         width: 100%;
-        color: rgb(134, 132, 132);
+        color: rgb(221, 218, 218);
     }
 
     .rodape h4{
@@ -21,27 +31,32 @@
         width: 3%;
     }
     .facebook, .github, .instagram{
-        width: 24%;
+        width: 19%;
         display: inline-block;
         margin-right: 9.3%;
     }
+
     img{
         width: 100%;
     }
 
-    #centro{
-        width: 30%;
-        margin-left: 12%;
+    .rodape #sobreMim, .rodape #centro{
+        border-bottom: 2px solid rgb(54, 53, 53);
     }
+
+    #centro{
+        display: inline-block;
+        width: 40%;
+     }
 
     #centro h3{
         margin-top: 30px;
     }
 
     #redes{
+        margin-top: 6%;
+        margin-left: 3%;
         width: 30%;
-        margin-right: auto;
-        margin-left: auto;
     }
 
 }
