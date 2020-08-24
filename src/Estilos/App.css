@@ -1,11 +1,20 @@
 span{
   color:rgb(136, 138, 139);
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: linear;
 }
 
 @media (min-width: 992px){
   
   span:hover{
     color: rgb(139, 138, 74);
+  }
+
+  ul li{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
   }
 
   ul, li{
@@ -16,6 +25,7 @@ span{
 
   ul li:hover{
     color: gold;
+    background-color: rgba(28,28,28, 0.5);
   }
 
   ul{
