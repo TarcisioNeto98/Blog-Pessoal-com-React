@@ -1,5 +1,7 @@
 import React from 'react';
+import logo from '../img/logo_tarcisio.png';
 import '../Estilos/App.css';
+import Projeto from '../Paginas/Projeto';
 import Contato from '../Paginas/Contato';
 import Sobre from '../Paginas/Sobre';
 import BotaoMenu from '../Componentes/BotaoMenu';
@@ -25,15 +27,18 @@ class Menu extends React.Component{
   render(){
     return(
       <BrowserRouter>
-        <div  id = {(this.props.esconder==='invisivel') ? 'invisivel' : ''}>
+        <div className="menu-principal" id = {(this.props.esconder==='invisivel') ? 'invisivel' : ''}>
           <div className = {(!this.state.clicado) ? "menu sombra" : "menu2"}>
             <BotaoMenu BotaoClicado = {this.clicarBotao}/>
           </div>
           <nav className="menu-lateral" id = {(this.state.clicado) ? "desaparecer" : "aparecer"}>
+            <div className="logo">
+                <img src={logo} alt="Logo pessoal"/>
+            </div>
             <ul className = "">
               <li id = "home"><Link style={{textDecoration:'none'}} to="/"><span>Home</span></Link></li>
               <li id = "categoria">Categoria</li>
-              <li id = "Projetos">Projetos</li>
+              <li id = "Projetos"><Link style={{textDecoration:'none'}} to="/Projetos"><span>Projetos</span></Link></li>
               <li id = "conversa"><Link style={{textDecoration:'none'}} to="/Contato"><span>Fale Comigo</span></Link></li>
               <li id = "sobre"><Link style={{textDecoration:'none'}} to="/Sobre"><span>Sobre mim</span></Link></li>
             </ul>
@@ -41,6 +46,7 @@ class Menu extends React.Component{
           </nav>
           <Switch>
             <Route exact path="/">{() => null}</Route>
+            <Route exact path="/Projetos"><Projeto/></Route>
             <Route exact path="/Contato"><Contato/></Route>
             <Route exact path="/Sobre"><Sobre/></Route>
           </Switch>

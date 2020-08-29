@@ -6,7 +6,18 @@ span{
 }
 
 @media (min-width: 992px){
-  
+
+  .logo{
+    margin-left: 12%;
+    width: 7%;
+    height: 3.3rem;
+  }
+
+  .logo img{
+    height: inherit;
+    width: 100%;
+  }
+
   span:hover{
     color: rgb(139, 138, 74);
   }
@@ -20,6 +31,9 @@ span{
   ul, li{
     display: inline-block;
     color: rgb(136, 138, 139);
+  }
+
+  li{
     margin-left: 5%;
   }
 
@@ -29,7 +43,6 @@ span{
   }
 
   ul{
-    margin-left: 7%;
     width: 50%;
   }
   
@@ -38,8 +51,11 @@ span{
   }
 
   .menu-lateral{
-    background-color:black;
-    height: 50px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    display: flex;
+    align-items: flex-start;
+    background-color:rgb(36, 34, 34);
   }
 }
 
